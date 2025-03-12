@@ -106,7 +106,7 @@ const EditorPage = () => {
                     </div>
                 </div>
                 <div className="asidebtn">
-                    <button className="copybtn btn" onClick={copyRoomId}>Copy roomID</button>
+                    <button className="copybtn btn" onClick={copyRoomId}> copy roomId</button>
                     <button className="lbtn btn" onClick={() => reactNavigator("/")}>Leave</button>
                 </div>
             </div>
