@@ -4,11 +4,11 @@ import Home from './pages/home'
 import EditorPage from './pages/editorpages'
 import { Toaster } from 'react-hot-toast';
 import './App.css';
+import Chatbot from './components/chatbot';
 
 function App() {
   return (
     <>
-    
      <Toaster position="top-right" reverseOrder={true} />
       <BrowserRouter>
         <Routes>
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
+      <Chatbot />
     </>
   );
 }

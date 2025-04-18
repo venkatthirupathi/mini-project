@@ -83,7 +83,8 @@ const EditorPage = () => {
             toast.error('Could not copy the Room ID');
             console.error(err);
         }
-    }
+    } 
+    
 
     function leaveRoom() {
         reactNavigator('/');
@@ -113,7 +114,25 @@ const EditorPage = () => {
             <div className="mainside">
                 <Editor socketRef={socketRef} roomId={roomId} onCodeChange={(code) => { codeRef.current = code; }} />
             </div>
+
+            <div id="chatbot-icon">💬</div>
+    <div id="chatbot-container" class="hidden">
+      <div id="chatbot-header">
+        <span>ChatBot</span>
+        <button id="close-btn">&times;</button>
+      </div>
+      <div id="chatbot-body">
+        <div id="chatbot-messages"></div>
+      </div>
+      <div id="chatbot-input-container">
+        <input type="text" id="chatbot-input" placeholder="Type a message" />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+    <script src="./mini-project/src/pages/chatbotscript.js"></script>
         </div>
+
+        
     );
 }
 
