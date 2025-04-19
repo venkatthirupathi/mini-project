@@ -30,6 +30,7 @@ function Chatbot() {
   }
 
   async function getBotResponse(userMessage) {
+    // var API_KEY = "";
     var API_KEY = "AIzaSyCT00WnSs-PpGwM0yuc43nefTWVFgY-Nw4";
     var API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
@@ -40,7 +41,7 @@ function Chatbot() {
         body: JSON.stringify({
           contents: [
             {
-              parts: [{ text: userMessage }],
+              parts: [{ text:"Answer Briefly: "+ userMessage }],
             },
           ],
         }),

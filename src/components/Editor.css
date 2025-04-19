@@ -1,0 +1,106 @@
+/* custom-theme.css */
+
+/* Editor container styling */
+.editor-container {
+  position: relative;
+  /* width: 89%; */
+  /* height: 500px; */
+  /* border-radius: 15px; */
+  /* background: linear-gradient(145deg, #000000, #ffffff); */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Editor header styling */
+.editor-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #e8e0e0;
+  border-bottom: 2px solid #2c3e50;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button styling */
+.editor-header button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.editor-header button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* CodeMirror editor styles */
+.CodeMirror {
+  height: 99%;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f0c29, #164960, #24243e); /* Deep violet/blue gradient */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(3px);
+}
+
+
+/* Cursor styling */
+.CodeMirror-cursor {
+  border-left: 2px solid #00ffff;
+  animation: blink 1.1s step-end infinite;
+}
+
+.CodeMirror-gutters {
+  background-color: transparent;
+  color: #00ffc3;
+  border: none;
+}
+
+.CodeMirror-selected {
+  background-color: rgba(0, 255, 255, 0.3) !important;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00ffff;
+  }
+}
+
+
+.CodeMirror-gutters {
+  border-right: 1px solid rgba(241, 239, 239, 0.1);
+  padding-right: 5px;
+  color: transparent; 
+}
+
+.CodeMirror-linenumber {
+  background: linear-gradient(to right, #00f2fe, #4facfe); /* Cyan to blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  
+}
