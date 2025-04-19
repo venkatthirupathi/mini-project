@@ -132,12 +132,12 @@ footer{
 
 .mainBox {
   color: white;
-  height: 100%;
+  height: 91.60vh;
   /* width: 100%; */
   background-color: rgb(221, 215, 215);
   
   display: flex;
-  margin: -1px;
+  margin: 3px;
   padding: 0px;
   /* justify-content: center; */
   /* align-items: center; */
@@ -150,7 +150,7 @@ footer{
 /* Night Owl Colors */
 background-color: #011627;
 color: #d6deeb;
-border-color: #4b6e80;
+border-color: #ffffff;
 --keyword-color: #82aaff; /* Light Blue for keywords */
 --string-color: #7fdbca;  /* Teal for strings */
 --function-color: #c792ea; /* Purple for functions */
@@ -161,27 +161,43 @@ border-color: #4b6e80;
   display: flex;
   width: 15%;
   height: 98vh;
+  /* height: 100vh; */
+
   /* justify-content: center; */
   /* align-items: center; */
   /* height: 100vh; */
 }
 
 .mainside{
-  flex: 60%;
+  flex: 80%;
   /* background-color: #002B36; */
   background-color: hsl(204, 100%, 50%);
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
   /* align-items: center; */
-   height: 97.7vh;
+   height: 100vh;
+   padding-right:20px;
+   padding-top: -100px;
   /* width: 10vh; */
+
+    position: relative;
+    width: 100px; /* Set to any fixed width */
+    height: 99vh;
+    /* border-radius: 15px; */
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 0 auto;
+    /* margin-right: -100; */
+  
   
 }
 
 .divimg img{
   display: flex;
-  width:100%;
+  width:98%;
   padding: -10px;
   flex: 2%;
   /* background-color: blue; */
