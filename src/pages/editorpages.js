@@ -281,10 +281,10 @@ const EditorPage = () => {
                     <button className="copybtn btn" onClick={copySessionLink}>Copy Session Link</button>
                     <button className="btn" onClick={downloadCode}>Download Code</button>
                     <button className="lbtn btn" onClick={leaveRoom}>Leave</button>
-                    <VideoButton
+                    {/* <VideoButton
                         onClick={() => setShowVideoCall(prev => !prev)}
                         isInCall={showVideoCall}
-                    />
+                    /> */}
                 </div>
             </div>
 
